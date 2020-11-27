@@ -1,7 +1,7 @@
 ### 1、获取所有数据
 
 - **请求URL**
-> [api/v1/data/repo?pageNo=1&pageSize=10](#)
+> [api/v1/data/repo?currentPage=1&pageSize=10](#)
 
 - **请求方式** 
 
@@ -11,7 +11,7 @@
 
 | 请求参数 | 参数类型 | 参数说明             |
 | -------- | -------- | -------------------- |
-| pageNo   | Interger | 文件内容             |
+| currentPage   | Interger | 文件内容             |
 | pageSize | string   | 文件名称，包含后缀名 |
 | search   | string   |檢索條件，一般爲文件|
 - **返回参数**
