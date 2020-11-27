@@ -1,24 +1,23 @@
-## 数据仓库接口文档##
-
-[TOC]
-
 ### 1、上传数据
 
 - **请求URL**
-> [api/v1/data/repo/upload](#)
+> [api/v1/data/repo/upload？filename=dfad](#)
 
 - **请求方式** 
->**POST**
+
+> *** POST *** 
 
 - **请求参数**
->
+
 | 请求参数      |     参数类型 |   参数说明   |
+| -------- | --------| ------ |
 |file          |file          |文件内容|
 |filename      |string        |文件名称，包含后缀名|
+
 - **返回参数**
->
+
 | 返回参数      |     参数类型 |   参数说明   |
-| :-------- | :--------| :------ |
+| -------- | --------| ------ |
 | errCode|   Integer|  错误码,正常为0|
 | errMsg|   string|  执行结果code|
 | data|   object|  返回数据|
@@ -29,8 +28,8 @@
 | size|Interger|文件大小，kb|
 | path|string |文件路径|
 
-- **返回示例**
->    
+- **返回示例**  
+
 ```json
 {
   "errCode":0,
