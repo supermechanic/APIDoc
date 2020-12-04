@@ -1,7 +1,7 @@
 ### 1、上传数据
 
 - **请求URL**
-> [api/v1/data/repo](#)
+> [api/v1/data/repo/record](#)
 
 - **请求方式** 
 
