@@ -1,7 +1,7 @@
 ### 1、刪除数据
 
 - **请求URL**
-> [api/v1/data/repo/{id}](#)
+> [api/v1/data/repo/record/{id}](#)
 
 - **请求方式** 
 
