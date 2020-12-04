@@ -1,7 +1,7 @@
 ### 1、上传数据
 
 - **请求URL**
-> [api/v1/data/repo/upload？filename=dfad](#)
+> [api/v1/data/repo/upload](#)
 
 - **请求方式** 
 
