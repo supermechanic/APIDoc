@@ -1,11 +1,7 @@
 ### 1、获取所有数据
 
 - **请求URL**
-<<<<<<< HEAD
 > [api/v1/data/repo](#)
-=======
-> [api/v1/data/repo?currentPage=1&pageSize=10](#)
->>>>>>> 5fcd916802d3a8a1e9a8b7c2a0abfcb9695a3d1e
 
 - **请求方式** 
 
@@ -14,17 +10,10 @@
 - **请求参数**
 
 | 请求参数 | 参数类型 | 参数说明             |
-<<<<<<< HEAD
 | -----------| -------- | -------------------- |
 | currentPage| Interger | 文件内容             |
 | pageSize   | Interger | 文件名称，包含后缀名 |
 | search     | string   | 检索关键词，当前版本呢只支持文件名|
-=======
-| -------- | -------- | -------------------- |
-| currentPage   | Interger | 文件内容             |
-| pageSize | string   | 文件名称，包含后缀名 |
-| search   | string   |檢索條件，一般爲文件|
->>>>>>> 5fcd916802d3a8a1e9a8b7c2a0abfcb9695a3d1e
 - **返回参数**
 
 | 返回参数  | 参数类型 | 参数说明             |
