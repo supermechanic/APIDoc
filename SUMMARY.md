@@ -13,7 +13,7 @@
             * [数据列表](data/repo/list.md)
             * [上传数据](data/repo/upload.md)
             * [删除数据](data/repo/delete.md)
-            * [检索数据](data/repo/search.md)
+            * [修改数据](data/repo/update.md)
     * [模型管理](data/model/README.md)
         * [模型仓库](data/model/Repo.md)
 * [实验管理](exp/README.md)

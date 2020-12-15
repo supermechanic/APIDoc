@@ -14,6 +14,7 @@
 | currentPage| Interger | 文件内容             |
 | pageSize   | Interger | 文件名称，包含后缀名 |
 | search     | string   | 检索关键词，当前版本呢只支持文件名|
+| owner      | string   | 所有者名称，数据仓库请求使用public,字段为空时查询当前用户|
 - **返回参数**
 
 | 返回参数  | 参数类型 | 参数说明             |
@@ -23,9 +24,13 @@
 | data      | object   | 返回数据             |
 | id        | Interger | 数据存储ID           |
 | name      | string   | 文件名               |
-| owner     | string   | 创建者名称           |
+| owner     | string   | 所有者名称           |
+| file_type | string   | 文件类型             |
+| file_ver  | string   | 文件版本             |
+| describe  | string   | 文件描述             |
+| creater   | string   | 创建者名称           |
 | create_at | Interger | 创建时间，时间戳格式 |
-| size      | Interger | 文件大小，kb         |
+| size      | Interger | 文件大小byte         |
 | path      | string   | 文件路径             |
 
 - **返回示例**  
@@ -39,7 +44,11 @@
         {
             "id":1,
             "name":"test.csv",
-            "owner":"tester1",
+            "file_type":"文本",
+            "file_ver":"v1",
+            "describe":"",
+            "owner":"",
+            "creater":"tester1",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -47,7 +56,11 @@
         {
             "id":2,
             "name":"test2.csv",
-            "owner":"tester2",
+            "file_type":"文本",
+            "file_ver":"v1",
+            "describe":"",
+            "owner":"",
+            "creater":"tester2",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -55,7 +68,11 @@
         {
             "id":3,
             "name":"test3.csv",
-            "owner":"tester1",
+            "file_type":"文本",
+            "file_ver":"v1",
+            "describe":"",
+            "owner":"",
+            "creater":"tester1",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -70,7 +87,7 @@
 ### 2、使用ID获取文件信息
 
 - **请求URL**
-> [api/v1/data/repo](#)
+> [api/v1/data/repo/{id}](#)
 
 - **请求方式** 
 
@@ -91,7 +108,7 @@
 | data      | object   | 返回数据             |
 | id        | Interger | 数据存储ID           |
 | name      | string   | 文件名               |
-| owner     | string   | 创建者名称           |
+| creater     | string   | 创建者名称           |
 | create_at | Interger | 创建时间，时间戳格式 |
 | size      | Interger | 文件大小，kb         |
 | path      | string   | 文件路径             |
@@ -105,7 +122,11 @@
   "data":{
     "id":1,
     "name":"test.csv",
-    "owner":"tester1",
+    "file_type":"文本",
+    "file_ver":"v1",
+    "describe":"",
+    "owner":"",
+    "creater":"tester1",
     "create_at":1606443441,
     "size":123123,
     "path":"/bucket/filename"

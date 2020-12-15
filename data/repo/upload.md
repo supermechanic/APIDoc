@@ -12,6 +12,9 @@
 | 请求参数      |     参数类型 |   参数说明   |
 | -------- | --------| ------ |
 |file          |file          |文件内容|
+|file_ver    |string            |文件版本|
+|file_type   |string          |文件类型|
+|file_dscb   |string          |文件描述|
 
 - **返回参数**
 
