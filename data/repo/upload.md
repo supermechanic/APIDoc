@@ -23,26 +23,35 @@
 | errCode|   Integer|  错误码,正常为0|
 | errMsg|   string|  执行结果code|
 | data|   object|  返回数据|
-| id| Interger|数据存储ID|
+| id| Integer|数据存储ID|
 | name|string|文件名|
-| owner|string|创建者名称|
-| create_at|Interger|创建时间，时间戳格式|
-| size|Interger|文件大小，kb|
+| owner|string|所有者名称|
+| creator |string |创建者名称|
+| create_at|Integer|创建时间，时间戳格式|
+| description  | string   | 文件描述          |
+| size|Integer|文件大小，kb|
 | path|string |文件路径|
 
 - **返回示例**  
 
 ```json
 {
-  "errCode":0,
-  "errMsg":"",
-  "data":{
-    "id":1,
-    "name":"test.csv",
-    "owner":"tester1",
-    "create_at":1606443441,
-    "size":123123,
-    "path":"/bucket/filename"
-  }
+    "errCode": 0,
+    "errMsg": "OK",
+    "data": {
+        "id": 26,
+        "name": "boston_house_prices.csv",
+        "owner": "chenjiear",
+        "creator": "chenjiear",
+        "size": 34742,
+        "path": "data/chenjiear/boston_house_prices_v3.csv",
+        "fileType": "文本",
+        "fileVer": "v3",
+        "description": "fdas324r2134234",
+        "repoId": null,
+        "sourceId": null,
+        "createAt": 1608690101275,
+        "updateAt": 1608690101275
+    }
 }
 ```

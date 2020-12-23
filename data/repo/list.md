@@ -11,8 +11,8 @@
 
 | 请求参数 | 参数类型 | 参数说明             |
 | -----------| -------- | -------------------- |
-| currentPage| Interger | 文件内容             |
-| pageSize   | Interger | 文件名称，包含后缀名 |
+| currentPage| Integer | 文件内容             |
+| pageSize   | Integer | 文件名称，包含后缀名 |
 | search     | string   | 检索关键词，当前版本呢只支持文件名|
 | owner      | string   | 所有者名称，数据仓库请求使用public,字段为空时查询当前用户|
 - **返回参数**
@@ -22,16 +22,17 @@
 | errCode   | Integer  | 错误码,正常为0       |
 | errMsg    | string   | 执行结果code         |
 | data      | object   | 返回数据             |
-| id        | Interger | 数据存储ID           |
+| id        | Integer | 数据存储ID           |
 | name      | string   | 文件名               |
 | owner     | string   | 所有者名称           |
 | file_type | string   | 文件类型             |
 | file_ver  | string   | 文件版本             |
-| describe  | string   | 文件描述             |
-| creater   | string   | 创建者名称           |
-| create_at | Interger | 创建时间，时间戳格式 |
-| size      | Interger | 文件大小byte         |
-| path      | string   | 文件路径             |
+| description  | string   | 文件描述             |
+| creator   | string   | 创建者名称           |
+| create_at | Integer | 创建时间，时间戳格式 |
+| update_at | Integer | 更新时间，时间戳     |
+| size      | Integer | 文件大小byte         |
+| path      | string   | 文件路径            |
 
 - **返回示例**  
 
@@ -46,9 +47,9 @@
             "name":"test.csv",
             "file_type":"文本",
             "file_ver":"v1",
-            "describe":"",
+            "description":"",
             "owner":"",
-            "creater":"tester1",
+            "creator":"tester1",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -58,9 +59,9 @@
             "name":"test2.csv",
             "file_type":"文本",
             "file_ver":"v1",
-            "describe":"",
+            "description":"",
             "owner":"",
-            "creater":"tester2",
+            "creator":"tester2",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -70,9 +71,9 @@
             "name":"test3.csv",
             "file_type":"文本",
             "file_ver":"v1",
-            "describe":"",
+            "description":"",
             "owner":"",
-            "creater":"tester1",
+            "creator":"tester1",
             "create_at":1606443441,
             "size":123123,
             "path":"/bucket/filename"
@@ -106,12 +107,17 @@
 | errCode   | Integer  | 错误码,正常为0       |
 | errMsg    | string   | 执行结果code         |
 | data      | object   | 返回数据             |
-| id        | Interger | 数据存储ID           |
+| id        | Integer | 数据存储ID           |
 | name      | string   | 文件名               |
-| creater     | string   | 创建者名称           |
-| create_at | Interger | 创建时间，时间戳格式 |
-| size      | Interger | 文件大小，kb         |
-| path      | string   | 文件路径             |
+| owner     | string   | 所有者名称           |
+| file_type | string   | 文件类型             |
+| file_ver  | string   | 文件版本             |
+| description  | string   | 文件描述             |
+| creator   | string   | 创建者名称           |
+| create_at | Integer | 创建时间，时间戳格式 |
+| update_at | Integer | 更新时间，时间戳     |
+| size      | Integer | 文件大小byte         |
+| path      | string   | 文件路径            |
 
 - **返回示例**  
 
@@ -124,9 +130,9 @@
     "name":"test.csv",
     "file_type":"文本",
     "file_ver":"v1",
-    "describe":"",
+    "description":"",
     "owner":"",
-    "creater":"tester1",
+    "creator":"tester1",
     "create_at":1606443441,
     "size":123123,
     "path":"/bucket/filename"
