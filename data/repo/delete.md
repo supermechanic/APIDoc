@@ -44,7 +44,7 @@
 
 | 请求参数      |     参数类型 |   参数说明   |
 | -------- | --------| ------ |
-|batch_id  |array    |文件存儲ID数组，整数类型|
+|batch_id  |array    |文件存儲ID数组，整数类型,application/json, body|
 
 - **返回参数**
 

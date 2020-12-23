@@ -11,10 +11,10 @@
 
 | 请求参数      |     参数类型 |   参数说明   |
 | -------- | --------| ------ |
-|file          |file          |文件内容|
-|file_ver    |string            |文件版本|
-|file_type   |string          |文件类型|
-|file_dscb   |string          |文件描述|
+|file          |file          |文件内容,form-data|
+|file_ver    |string          |文件版本,form-data|
+|file_type   |string          |文件类型,form-data|
+|file_dscb   |string          |文件描述,form-data|
 
 - **返回参数**
 

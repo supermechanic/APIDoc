@@ -1,20 +1,20 @@
 ### 1、获取所有数据
 
 - **请求URL**
-> [api/v1/data/repo/record](#)
+> [api/v1/data/repo/record/list](#)
 
 - **请求方式** 
 
-> *** GET *** 
+> *** POST *** 
 
 - **请求参数**
 
 | 请求参数 | 参数类型 | 参数说明             |
 | -----------| -------- | -------------------- |
-| currentPage| Integer | 文件内容             |
-| pageSize   | Integer | 文件名称，包含后缀名 |
-| search     | string   | 检索关键词，当前版本呢只支持文件名|
-| owner      | string   | 所有者名称，数据仓库请求使用public,字段为空时查询当前用户|
+| currentPage| Integer | 文件内容,application/json, body|
+| pageSize   | Integer | 文件名称，包含后缀名,application/json, body |
+| search     | string   | 检索关键词，当前版本呢只支持文件名,application/json, body|
+| owner      | string   | 所有者名称，数据仓库请求使用public,字段为空时查询,application/json, body当前用户|
 - **返回参数**
 
 | 返回参数  | 参数类型 | 参数说明             |
@@ -98,7 +98,7 @@
 
 | 请求参数 | 参数类型 | 参数说明   |
 | -------- | -------- | ---------- |
-| id       | Integer  | 文件存储ID |
+| id       | Integer  | 文件存储ID,pathparam |
 
 - **返回参数**
 
