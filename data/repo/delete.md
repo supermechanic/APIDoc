@@ -11,7 +11,7 @@
 
 | 请求参数      |     参数类型 |   参数说明   |
 | -------- | --------| ------ |
-|id          |Integer          |文件存儲ID|
+|id          |Integer          |文件存儲ID,pathparam|
 
 - **返回参数**
 
@@ -34,7 +34,7 @@
 ### 2、批量刪除数据
 
 - **请求URL**
-> [api/v1/data/repo](#)
+> [api/v1/data/repo/record](#)
 
 - **请求方式** 
 
