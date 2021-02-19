@@ -30,9 +30,10 @@
 |total     |Integer  |总记录数|
 |list      |Array    |当前页数据|
 |id        |Integer  |id|
+|serviceName|String  |服务名称|
 |creator   |String   |创建者|
 |status    |string   |状态|
-|service_type|string |server|
+|serviceType|string |server|
 |protocol  |string   |发布使用的新协议|
 |time       |string  |时间  |
 |address   |string   |服务地址|
@@ -48,10 +49,10 @@
         "list": [
             {
                 "id": 1,
-                "service_name": "test-publish-iris",
+                "serviceName": "test-publish-iris",
                 "creator": "",
                 "status": "",
-                "service_type": "SKLEARN_SERVER",
+                "serviceType": "SKLEARN_SERVER",
                 "protocol": "SeldonCoreV1",
                 "time": "2021/02/07 03:23:14",
                 "address": "",
@@ -59,10 +60,10 @@
             },
             {
                 "id": 2,
-                "service_name": "test-publish-iris-v1",
+                "serviceName": "test-publish-iris-v1",
                 "creator": "",
                 "status": "",
-                "service_type": "SKLEARN_SERVER",
+                "serviceType": "SKLEARN_SERVER",
                 "protocol": "SeldonCoreV1",
                 "time": "2021/02/07 09:02:57",
                 "address": "",
@@ -70,10 +71,10 @@
             },
             {
                 "id": 3,
-                "service_name": "test-publish-iris-v2",
+                "serviceName": "test-publish-iris-v2",
                 "creator": "",
                 "status": "",
-                "service_type": "SKLEARN_SERVER",
+                "serviceType": "SKLEARN_SERVER",
                 "protocol": "SeldonCoreV1",
                 "time": "2021/02/08 02:40:07",
                 "address": "",
@@ -81,10 +82,10 @@
             },
             {
                 "id": 4,
-                "service_name": "test-publish-iris-v3",
+                "serviceName": "test-publish-iris-v3",
                 "creator": "",
                 "status": "",
-                "service_type": "SKLEARN_SERVER",
+                "serviceType": "SKLEARN_SERVER",
                 "protocol": "SeldonCoreV1",
                 "time": "2021/02/08 12:04:51",
                 "address": "",
