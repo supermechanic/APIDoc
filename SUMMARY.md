@@ -21,6 +21,7 @@
     * [pipeline](exp/pipeline/README.md)
     * [预测](exp/prediction/README.md)
         * [新建在线预测](exp/prediction/online-publish.md)
+        * [在线预测列表](exp/prediction/online=list.md)
         * [服务信息](exp/prediction/server-info.md)
     * [training](exp/training/README.md)
     * [job](exp/job/README.md)
