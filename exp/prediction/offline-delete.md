@@ -1,31 +1,22 @@
-### 1、新建离线预测
+### 1、删除停止离线预测
 
 - **请求URL**
-> [api/v1/predict/publish/offline](#)
+> [api/v1/predict/offline/id/{id}/type/{type}](#)
 
 - **请求方式** 
 
-> POST
+> DELETE
 
 - **请求参数**
 
 | 请求参数      |     参数类型 |   参数说明   |
 | -------- | --------| ------ |
-|predict_name|string |预测名称,不可重复|
-|model_id| string | 模型列表返回的模型对应的ID|
-|data_id|Integer |数据ID|
-|creator| String |创建者|
+|id        |Integer|记录id|
+|type      |Integer|0,删除；1,停止
 
 - **请求示例**  
-```json
-{
-    "model_id":"",
-    "data_id":1,
-    //服务名称
-    "predict_name":"",
-    "creator":"ddd",
-}
-```
+
+url/api/v1/predict/online/id/2/type/1
 
 - **返回参数**
 

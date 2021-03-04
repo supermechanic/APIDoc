@@ -1,4 +1,4 @@
-### 1、新建在线预测
+### 1、删除停止在线预测
 
 - **请求URL**
 > [api/v1/predict/online/id/{id}/type/{type}](#)
