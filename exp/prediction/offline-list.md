@@ -14,13 +14,15 @@
 |current_page|Integer|当前页码|
 |page_size|Integer|页面大小|
 |condition  |String |检索条件|
+|creator   |String |当前用户名|
 
 - **请求示例**  
 ```json
 {
     "current_page":1,
     "page_size":10,
-    "condition":""
+    "condition":"",
+    "creator":"mayxe"
 }
 ```
 
@@ -50,7 +52,30 @@
     "data": {
         "total": 4,
         "list": [
-            {}
+            {
+                "id": 1,
+                "predictName": "iris-test",
+                "modelName": "iris_test",
+                "modelPath": "model/umayxe/iris_test/1.0.0.0/model.joblib",
+                "dataName": "iris_test",
+                "dataPath": "data/mayxe/iris_test/test.csv",
+                "storePath": "",
+                "creator": "mayxe",
+                "creatTime": "",
+                "status": "Stop"
+            },
+            {
+                "id": 2,
+                "predictName": "iris-test-v1",
+                "modelName": "iris_test",
+                "modelPath": "model/umayxe/iris_test/1.0.0.0/model.joblib",
+                "dataName": "iris_test",
+                "dataPath": "data/mayxe/iris_test/test.csv",
+                "storePath": "",
+                "creator": "mayxe",
+                "creatTime": "",
+                "status": "Stop"
+            }
         ]
     }
 ```

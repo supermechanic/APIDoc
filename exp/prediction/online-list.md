@@ -14,10 +14,15 @@
 |current_page|Integer|当前页码|
 |page_size|Integer|页面大小|
 |condition  |String |检索条件|
-
+|creator   |String |当前用户名|
 - **请求示例**  
 ```json
-
+{
+    "current_page":1,
+    "page_size":10,
+    "condition":"",
+    "creator":"mayxe"
+}
 ```
 
 - **返回参数**
